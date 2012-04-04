@@ -92,7 +92,6 @@
 {   
     ENSURE_SINGLE_ARG(args,NSString);
     [Beintoo initWithApiKey:[args retain] andApiSecret:nil andBeintooSettings:nil andMainDelegate:nil];
-    [Beintoo switchBeintooToSandbox];
     NSLog(@"[INFO][Beintoo] - Apikey %@ is set: %@!",[Beintoo getApiKey],args);
 }
 
