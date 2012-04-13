@@ -35,6 +35,39 @@
     }
 }
 
+- (id)getMarketplaceUrl{
+    
+    NSString *urlAddress;
+    
+    if ([Beintoo isOnSandbox])
+        urlAddress      = [NSString stringWithFormat:@"https://sandbox-elb.beintoo.com/m/marketplace.html"]; 
+    else 
+        urlAddress      = [NSString stringWithFormat:@"https://www.beintoo.com/m/marketplace.html"];
+    
+    
+    urlAddress          = [urlAddress stringByAppendingFormat:@"?apikey=%@", [Beintoo getApiKey]];
+    
+    if ([Beintoo getPlayerID])
+        urlAddress          = [urlAddress stringByAppendingFormat:@"&guid=%@", [Beintoo getPlayerID]];
+    
+    CLLocation *loc     = [Beintoo getUserLocation];
+    if (loc == nil || (loc.coordinate.latitude <= 0.01f && loc.coordinate.latitude >= -0.01f) 
+        || (loc.coordinate.longitude <= 0.01f && loc.coordinate.longitude >= -0.01f)) {
+        
+    }
+    else	
+        urlAddress      = [urlAddress stringByAppendingFormat:@"&lat=%f&lng=%f&acc=%f", loc.coordinate.latitude,loc.coordinate.longitude,loc.horizontalAccuracy];	
+    
+    /* Virtual Currency not already supported on this Sdk Version
+     
+     if ([Beintoo isVirtualCurrencyStored]){
+        urlAddress      = [urlAddress stringByAppendingFormat:@"&developer_user_guid=%@&virtual_currency_amount=%f", [Beintoo getDeveloperUserId], [Beintoo getVirtualCurrencyBalance]];
+    }*/
+
+    return urlAddress;
+    
+}
+
 
 @end
 

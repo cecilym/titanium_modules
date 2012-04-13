@@ -20,8 +20,6 @@
 
 @implementation Beintoo
 
-NSString *BNSDefIsUserLogged;
-
 + (void)initWithApiKey:(NSString *)_apikey andApiSecret:(NSString *)_apisecret 
 										   andBeintooSettings:(NSDictionary *)_settings 
 										   andMainDelegate:(id<BeintooMainDelegate>)beintooMainDelegate{

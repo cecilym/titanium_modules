@@ -723,6 +723,8 @@
 				GCC_PREFIX_HEADER = TiBeintoo_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = TiBeintoo;
+				TITANIUM_SDK = "/Users/giuseppepiazzese/Library/Application Support/Titanium/mobilesdk/osx/1.8.2";
+				TITANIUM_SDK_VERSION = 1.8.2;
 			};
 			name = Debug;
 		};
@@ -738,6 +740,8 @@
 				GCC_PREFIX_HEADER = TiBeintoo_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = TiBeintoo;
+				TITANIUM_SDK = "/Users/giuseppepiazzese/Library/Application Support/Titanium/mobilesdk/osx/1.8.2";
+				TITANIUM_SDK_VERSION = 1.8.2;
 			};
 			name = Release;
 		};
@@ -754,6 +758,8 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
+				TITANIUM_SDK = "/Users/giuseppepiazzese/Library/Application Support/Titanium/mobilesdk/osx/1.8.2";
+				TITANIUM_SDK_VERSION = 1.8.2;
 			};
 			name = Debug;
 		};
@@ -769,6 +775,8 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
+				TITANIUM_SDK = "/Users/giuseppepiazzese/Library/Application Support/Titanium/mobilesdk/osx/1.8.2";
+				TITANIUM_SDK_VERSION = 1.8.2;
 			};
 			name = Release;
 		};
@@ -780,6 +788,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "Build & test";
+				SDKROOT = 4.0;
+				TITANIUM_SDK = "/Users/giuseppepiazzese/Library/Application Support/Titanium/mobilesdk/osx/1.8.2";
+				TITANIUM_SDK_VERSION = 1.8.2;
 			};
 			name = Debug;
 		};
@@ -791,7 +802,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "Build & test";
-				ZERO_LINK = NO;
+				SDKROOT = 4.0;
+				TITANIUM_SDK = "/Users/giuseppepiazzese/Library/Application Support/Titanium/mobilesdk/osx/1.8.2";
+				TITANIUM_SDK_VERSION = 1.8.2;
+				ZERO_LINK = 1.8.2;
 			};
 			name = Release;
 		};

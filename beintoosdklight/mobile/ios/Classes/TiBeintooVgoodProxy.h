@@ -12,4 +12,8 @@
 {
 }
 
+- (void)getVgood:(id)args;
+- (id)getMarketplaceUrl;
+
+
 @end
